@@ -7,7 +7,40 @@ using namespace std;
 
 int main()
 {
+// firstly we declared the constant and variables
+  const double increase = 1.05;
 
+  double store1 = 0.0;
+  double store2 = 0.0;
+  
+
+  //now we do the declaration and initialization of 3 int variables
+
+  int store1int, store2int, totalint;
+
+  cout << "Enter store1 sales:";
+  cin >> store1;
+  cout << "Enter store2 sales:";
+  cin >> store2;
+
+  //now we change the first assignment
+
+  store1int = static_cast<int>(store2*increase * 100+.5);
+
+  //now we change the second assignment
+  store2int = static_cast<int>(store2*increase * 100+.5);
+
+  //now we change the third assignment
+
+  totalint = store1int + store2int;
+  cout << fixed << setprecision(2);
+
+  //*now we change the store1 in the second cout statement and then we change the third cout statement then we change the last cout statement
+
+  cout << "Store1 sales: $" << store1int/100.0 << endl;
+  cout << "Store2 sales: $" << store2int/100.0 << endl;
+  cout << "Total sales: $" << totalint/100.0 << endl;
+  
   return 0;
 }	//end of main function
 
